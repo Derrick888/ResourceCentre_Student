@@ -323,7 +323,7 @@ public class ResourceCentre {
 				chromebookList.get(i).setDueDate("");
 				isReturned = true;
 
-			}
+		 }
 		}
 		return isReturned;
 	}
