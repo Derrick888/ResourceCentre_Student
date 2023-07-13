@@ -13,7 +13,7 @@ private int opticalZoom;
 	
 	public String toString(){
 		String output = "";
-		// Write your codes here
+		output += getAssetTag() + "," + getDescription() + "," getOpticalZoom()
 		return output;
 	}
 }
