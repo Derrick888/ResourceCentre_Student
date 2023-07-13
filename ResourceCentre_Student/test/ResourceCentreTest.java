@@ -256,6 +256,7 @@ public class ResourceCentreTest {
 		//fail("Not yet implemented");
 		// write your code here
 		//test
+		//test
 		// Test case 1: Return a loaned out item
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 		ResourceCentre.addChromebook(chromebookList, cb1);
