@@ -227,7 +227,7 @@ public class ResourceCentreTest {
 		assertTrue("Test that there is an item available", camcorderList.get(2).getIsAvailable());
 		ok = ResourceCentre.doLoanChromebook(chromebookList, "CB0013", "" );
 		assertFalse("Test that the loan fails.", ok);
-	}
+	} 
 
 	@Test
 	public void testDoReturnCamcorder() {
