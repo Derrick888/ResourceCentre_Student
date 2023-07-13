@@ -215,7 +215,7 @@ public class ResourceCentreTest {
 				assertFalse("Test that there is an item not available", chromebookList.get(1).getIsAvailable());
 				ok = ResourceCentre.doLoanChromebook(chromebookList, "CB0012", "8-8-2020" );
 				assertFalse("Test that the loan fails.", ok);	
-//e
+
 				// Test Case 3 - Item not found
 				ok = ResourceCentre.doLoanChromebook(chromebookList, "CB0016", "8-8-2020" );
 				assertFalse("Test that the loan fails.", ok);
