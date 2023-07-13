@@ -188,7 +188,7 @@ public class ResourceCentre {
 		if ((cc.getAssetTag().isEmpty()) || (cc.getDescription().isEmpty()) ) {
 			return;
 		}
-		
+
 		camcorderList.add(cc);
 	}
 	
@@ -214,10 +214,10 @@ public class ResourceCentre {
 		if ((cb.getAssetTag().isEmpty()) || (cb.getDescription().isEmpty()) ) {
 			return;
 		}
-		
+
 		chromebookList.add(cb);
 	}
-	
+
 	//================================= Option 3 Loan an item (CRUD - Update) =================================
 	public static boolean doLoanCamcorder(ArrayList<Camcorder> camcorderList, String tag, String dueDate) {
 		

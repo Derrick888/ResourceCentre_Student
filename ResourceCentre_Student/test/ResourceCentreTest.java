@@ -67,14 +67,14 @@ public class ResourceCentreTest {
 	@Test
 	public void testAddChromebook() {
 		//fail("Not yet implemented");
-		
+
 		// Item list is not null and it is empty
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 		assertEquals("Test that the Chromebook arraylist is empty.", 0, chromebookList.size());
 		//Given an empty list, after adding 1 item, the size of the list is 1
 		ResourceCentre.addChromebook(chromebookList, cb1);		
 		assertEquals("Test that the Chromebook arraylist size is 1.", 1, chromebookList.size());
-		
+
 		// Add an item
 		ResourceCentre.addChromebook(chromebookList, cb2);
 		assertEquals("Test that the Chromebook arraylist size is now 2.", 2, chromebookList.size());
@@ -131,7 +131,7 @@ public class ResourceCentreTest {
 	@Test
 	public void testRetrieveAllChromebook() {
 		//fail("Not yet implemented");
-		
+
 		//Test Case 1
 				// Test if Item list is not null and empty
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
