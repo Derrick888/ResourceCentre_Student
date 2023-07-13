@@ -225,7 +225,7 @@ public class ResourceCentreTest {
 		ok = ResourceCentre.doLoanChromebook(chromebookList, "CB0013", "" );
 		assertFalse("Test that the loan fails.", ok);
      }
-
+ 
 	@Test
 	public void testDoReturnCamcorder() {
 		
