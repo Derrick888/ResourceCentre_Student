@@ -149,7 +149,7 @@ public class ResourceCentre {
 
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
-		// write your code here
+		
 		for (int i = 0; i < chromebookList.size(); i++) {
 			if (chromebookList.get(i).getIsAvailable()) {
 				output += String.format("%-10s %-30s %-10s %-10s %-20d\n", chromebookList.get(i).getAssetTag(),
@@ -161,7 +161,6 @@ public class ResourceCentre {
 		return output;
 	}
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
-		// write your code here
 		ResourceCentre.setHeader("CHROMEBOOK LIST");
 		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
 				"AVAILABLE", "DUE DATE","OS");
@@ -195,7 +194,7 @@ public class ResourceCentre {
 	
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
-		// write your code here
+
 		String tag = Helper.readString("Enter asset tag > ");
 		String description = Helper.readString("Enter description > ");
 		String oz = Helper.readString("Enter os > ");
@@ -206,7 +205,6 @@ public class ResourceCentre {
 		
 	}	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
-		// write your code here
 		Chromebook item;
 		for(int i = 0; i < chromebookList.size(); i++) {
 			item = chromebookList.get(i);
@@ -253,7 +251,6 @@ public class ResourceCentre {
 	}
 	
 	public static boolean doLoanChromebook(ArrayList<Chromebook> chromebookList, String tag, String dueDate) {
-		// write your code here
 		boolean isLoaned = false;
 
 		if (tag.isEmpty() || dueDate.isEmpty())
@@ -272,7 +269,6 @@ public class ResourceCentre {
 		return true;
 	}
 	public static void loanChromebook(ArrayList<Chromebook> chromebookList) {
-		// write your code here		
 		ResourceCentre.viewAllChromebook(chromebookList);
 		String tag = Helper.readString("Enter asset tag > ");
 		String due = Helper.readString("Enter due date > ");
@@ -317,7 +313,6 @@ public class ResourceCentre {
 
 	public static boolean doReturnChromebook(ArrayList<Chromebook> chromebookList,String tag){
 		boolean isReturned = false;
-		// write your code here
 		if (tag.isEmpty())
 			return false;
 
@@ -333,7 +328,6 @@ public class ResourceCentre {
 		return isReturned;
 	}
 	public static void returnChromebook(ArrayList<Chromebook> chromebookList) {
-		// write your code here
 		ResourceCentre.viewAllChromebook(chromebookList);
 		String tag = Helper.readString("Enter asset tag > ");
 		Boolean isReturned = doReturnChromebook(chromebookList, tag);

@@ -67,7 +67,6 @@ public class ResourceCentreTest {
 	@Test
 	public void testAddChromebook() {
 		//fail("Not yet implemented");
-		// write your code here 
 		
 		// Item list is not null and it is empty
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
@@ -132,7 +131,6 @@ public class ResourceCentreTest {
 	@Test
 	public void testRetrieveAllChromebook() {
 		//fail("Not yet implemented");
-		// write your code here
 		
 		//Test Case 1
 				// Test if Item list is not null and empty
@@ -201,7 +199,6 @@ public class ResourceCentreTest {
 	@Test
 	public void testDoLoanChromebook() {
 		//fail("Not yet implemented");
-		// write your code here
 
 		// Test Case 1 - Loan an available Item
 		assertNotNull("test if there is valid Chromebook arraylist to loan from", chromebookList);
@@ -253,7 +250,6 @@ public class ResourceCentreTest {
 	@Test
 	public void testDoReturnChromebook() {
 		//fail("Not yet implemented");
-		// write your code here
 		
 		// Test case 1: Return a loaned out item
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
