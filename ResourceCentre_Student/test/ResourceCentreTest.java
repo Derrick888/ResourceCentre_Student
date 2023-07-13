@@ -75,17 +75,17 @@ public class ResourceCentreTest {
 
 		
 		// Add an item
-		ResourceCentre.addCamcorder(chromebookList, cb2);
+		ResourceCentre.addChromebook(chromebookList, cb2);
 		assertEquals("Test that the Chromebook arraylist size is now 2.", 2, chromebookList.size());
 		//The item just added is as same as the last item in the list
 		assertSame("Test that Chromebook is added to the end of the list.", cb2, chromebookList.get(1));
 
 		// Add an item that already exists in the list
-		ResourceCentre.addCamcorder(chromebookList, cb2);
+		ResourceCentre.addChromebook(chromebookList, cb2);
 		assertEquals("Test that the Chromebook arraylist size is unchange.", 2, chromebookList.size());
 
 		// Add an item that has missing detail
-		Camcorder cc_missing = new Camcorder("CB0014", "", 60);
+		Camcorder cc_missing = new Chromebook("CB0014", "", 60);
 		ResourceCentre.addChromebook(chromebookList, cc_missing);
 		assertEquals("Test that the Chromebook arraylist size is unchange.", 2, chromebookList.size());
 	}
