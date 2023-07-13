@@ -153,7 +153,7 @@ public class ResourceCentreTest {
 		testOutput += String.format("%-10s %-30s %-10s %-10s %-20d\n","CB0012", "SAMSUNG Chromebook 4+", "Yes", "", "Win 10");
 		// Test that the details are displayed correctly
 		assertEquals("Test that the display is correct.", testOutput, allChromebook);
-//
+
 		//Test Case 3
 		cb3.setIsAvailable(false);
 		ResourceCentre.addChromebook(chromebookList, cb3);

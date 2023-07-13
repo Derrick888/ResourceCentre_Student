@@ -10,7 +10,7 @@ private int opticalZoom;
 	public int getOpticalZoom() {
 		return opticalZoom;
 	}
-	
+
 	public String toString(){
 		String output = "";
 		// Write your codes here
