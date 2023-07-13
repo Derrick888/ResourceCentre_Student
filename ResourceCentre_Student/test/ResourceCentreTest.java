@@ -202,7 +202,7 @@ public class ResourceCentreTest {
 	public void testDoLoanChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
-		
+
 		// Test Case 1 - Loan an available Item
 		assertNotNull("test if there is valid Chromebook arraylist to loan from", chromebookList);
 		ResourceCentre.addChromebook(chromebookList, cb1);

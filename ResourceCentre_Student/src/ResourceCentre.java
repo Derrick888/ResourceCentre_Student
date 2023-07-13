@@ -320,7 +320,7 @@ public class ResourceCentre {
 		// write your code here
 		if (tag.isEmpty())
 			return false;
-		
+
 		for (int i = 0; i < chromebookList.size(); i++) {
 			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
 					&& chromebookList.get(i).getIsAvailable() == false) {
