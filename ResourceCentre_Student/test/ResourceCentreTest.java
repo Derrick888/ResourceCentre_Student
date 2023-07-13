@@ -245,6 +245,7 @@ public class ResourceCentreTest {
 
 	@After
 	public void tearDown() throws Exception {
+		//yeh
 		cc1 = null;
 		cc2 = null;
 		cc3 = null;
